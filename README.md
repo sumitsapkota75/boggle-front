@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Demo for the App: https://boggle-front.vercel.app/
+
 First, run the development server:
 
 ```bash
