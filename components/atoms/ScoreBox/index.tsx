@@ -8,15 +8,13 @@ const Wrapper = styled.div`
     width: 300px;
     border-radius: 5px;
     border: solid 1px #EEEEEE;
-    float: right;
     margin: 15px;
     padding: 10px;
 
     .word-list{
         display: flex;
         width: 100%;
-        height: 200px;
-        max-height: 200px;
+        max-height: 400px;
         overflow-y: auto;
         padding-bottom:10px;
         border-bottom: solid 1px #EEEEEE;
@@ -32,6 +30,7 @@ const Wrapper = styled.div`
         align-items: center;
         width: 50%;
         justify-content: center
+        overflow-y: auto;
     }
     .score{
         display: flex;
@@ -39,6 +38,7 @@ const Wrapper = styled.div`
         flex-direction: column;
         width: 50%;
         justify-content: center
+        overflow-y: auto;
     }
     .total{
         margin-top:20px;
@@ -57,9 +57,15 @@ const ScoreBox = () => {
                 <p>Cat</p>
                 <p>Mouse</p>
                 <p>Tiger</p>
+                <p>Cat</p>
+                <p>Mouse</p>
+                <p>Tiger</p>
             </div>
             <div className="score">
                 <h2>Score</h2>
+                <p>33</p>
+                <p>44</p>
+                <p>55</p>
                 <p>33</p>
                 <p>44</p>
                 <p>55</p>

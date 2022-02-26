@@ -4,12 +4,13 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size:21px;
+    gap:50px;
     height:80px;
     width:100%;
 
-    .reset{
+    .reset {
       width:200px;
       display: flex;
       align-items: center;

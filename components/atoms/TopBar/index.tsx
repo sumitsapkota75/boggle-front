@@ -8,7 +8,8 @@ const Wrapper = styled.div`
     font-size:21px;
     height:80px;
     width:100%;
-    background-color:#c8e6cb;
+    background-color:#A54657;
+    color: #FFFFFF;
 
     .username{
         margin-right:1.2rem;
@@ -24,7 +25,7 @@ const TopBar = () => {
   return (
     <Wrapper>
         <div className="title">Boggle</div>
-        <div className="username">Hello, Sumit</div>
+        <div className="username">Hello, User</div>
     </Wrapper>
   )
 }
