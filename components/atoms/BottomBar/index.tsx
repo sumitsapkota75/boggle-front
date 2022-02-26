@@ -1,3 +1,4 @@
+import Router from 'next/router'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -58,14 +59,43 @@ const Wrapper = styled.div`
       -webkit-user-select: none;
       touch-action: manipulation;
     }
+
+    .homepage{
+      width:200px;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      background-image: linear-gradient(92.88deg, #10d631 9.16%, #5fcc3e 43.89%, #42d11e 64.72%);
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      height: 4rem;
+      padding: 0 1.6rem;
+      text-align: center;
+      text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+      transition: all .5s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
 }
 `
 
 const BottomBar = () => {
+  const goToHomePage = () => { 
+    Router.push("/")
+   }
   return (
     <Wrapper>
         <div className="submit">Submit</div>
         <div className="reset">Reset</div>
+        <div className="homepage" onClick={goToHomePage}>Go To Homepage</div>
     </Wrapper>
   )
 }
