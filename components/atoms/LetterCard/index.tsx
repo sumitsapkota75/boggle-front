@@ -29,7 +29,7 @@ const Wrapper = styled.div`
     &:hover{
         cursor: pointer;
         transform:scale(1.1);
-       transition: all .3s ease-out;
+        transition: all .3s ease-out;
     }
 `;
 

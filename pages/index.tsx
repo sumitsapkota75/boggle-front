@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
@@ -62,8 +62,9 @@ const Wrapper = styled.div`
 
 const Home: NextPage = () => {
   const router  = useRouter()
+  const id = 211
   const handleStartGame = () => { 
-    router.push("/game")
+    router.push(`/game/${id}`)
    }
   return (
     <Wrapper>
