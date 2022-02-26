@@ -1,1 +1,6 @@
 export * from "./LetterCard"
+export * from "./Box"
+export * from "./TextInput"
+export * from "./ScoreBox"
+export * from "./TopBar"
+export * from "./BottomBar"

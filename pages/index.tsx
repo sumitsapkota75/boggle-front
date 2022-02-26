@@ -1,11 +1,23 @@
 import type { NextPage } from 'next'
-import { LetterCard } from '../components'
+import styled from 'styled-components'
+import { BottomBar, Box, ScoreBox, TextInput, TopBar } from '../components'
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+`;
 
 const Home: NextPage = () => {
   return (
-    <>
-    <LetterCard />
-    </>
+    <Wrapper>
+      <TopBar />
+      <Box />
+      <ScoreBox />
+      <TextInput />
+      <BottomBar />
+    </Wrapper>
   )
 }
 
